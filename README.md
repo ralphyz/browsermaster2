@@ -1,5 +1,5 @@
 ## Browser Master 2.1
-Browser Master 2.1 registers as your default browser and forwards web requests to your preferred browser. It works with Firefox, Chrome, Opera, Safari, Internet Explorer, and Edge.
+Browser Master 2.1 registers as your default browser and forwards web requests to your preferred browser. It works with Firefox, Chrome, Opera, Safari, Internet Explorer, and Edge.  It was specifically written to work with Windows 10
 
 ![](https://github.com/ralphyz/browsermaster2/raw/master/images/browser_master_2.1.gif)
 
@@ -38,7 +38,12 @@ The first BrowserConfig is the default (selected when the timeout has been reach
 ### Usage
 ![](https://github.com/ralphyz/browsermaster2/raw/master/images/config.png)
 
-Any link you click, URL shortcut you double-click, or website you type into the Windows Run box will launch BrowserMaster.  If you do not make a selection by the timeout period (2 seconds default), the first browser will be launched for you.  If you press an arrow key (left or right), that timeout goes away.  BrowserMaster will stay up indefinitely at that point.  Press Enter to choose a browser, or press ESC to cancel.  If you are fast enough (or set a very long timeout), you may click an icon to select a browser.
+Any link you click, URL shortcut you double-click, or website you type into the Windows Run box will launch BrowserMaster.  If you do not make a selection by the timeout period (2 seconds default), the default (first) browser will be launched for you.  If you press an arrow key (left or right), that timeout goes away.  BrowserMaster will stay up indefinitely at that point.  Press Enter to choose a browser, or press ESC to cancel.  If you are fast enough (or set a very long timeout), you may click an icon to select a browser.
 
-BrowserMaster automatically checks for which browsers you have installed (out of the supported browsers).  Right now, it assumes you have installed them in the Program Files or Program Files (x86) directories.  If you have them installed somewhere else, you can manually edit the BrowserMaster.xml file and add the browser.  Other browsers (like Brave) can be used if you manually add them and copy the config from another browser.  Chrome would be a good option to copy for Brave.
+BrowserMaster automatically checks for which browsers you have installed (out of the supported browsers).  Right now, it assumes you have installed them in the Program Files or Program Files (x86) directories in C:\.  If you have them installed somewhere else, you can manually edit the BrowserMaster.xml file and add the browser.  Other browsers (like Brave) can be used if you manually add them and copy the config from another browser.  Chrome would be a good option to copy for Brave.
+
+**Note:** To launch Edge, a command prompt is started. I could not find a better way.  The command run is:
+```
+%windir%\System32\cmd.exe /c start shell:AppsFolder\Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge <url>
+```
 
