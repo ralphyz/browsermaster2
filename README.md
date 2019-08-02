@@ -3,7 +3,7 @@ Browser Master 2.1 registers as your default browser and forwards web requests t
 
 ![](https://github.com/ralphyz/browsermaster2/raw/master/images/browser_master_2.1.gif)
 
-Browser Master 2.1 is based on [Browser Master 2.0](https://archive.codeplex.com/?p=browsermaster2) that I wrote.  That was based on the original [BrowserMaster](https://archive.codeplex.com/?p=browsermaster) written for Windows XP by jquintus. It has been updated to work with Windows 7.
+Browser Master 2.1 is based on [Browser Master 2.0](https://archive.codeplex.com/?p=browsermaster2) that I wrote.  That was based on the original [BrowserMaster](https://archive.codeplex.com/?p=browsermaster) written for Windows XP by jquintus. It has been updated to work with Windows 10.
 
 Browser Master registers as your default browser and captures web requests.  The user is briefly presented with a choice of which browser to use for the web request.  If no choice is made (and no key is pressed) before the timeout, it forwards the web request to your preferred browser.
 
