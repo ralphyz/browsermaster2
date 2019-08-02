@@ -1,0 +1,10 @@
+﻿<Window x:Class="BrowserMaster.BrowserPicker"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Browser Picker" 
+    AllowsTransparency="True" WindowStyle="None" Background="Transparent" 
+    ShowInTaskbar="False"
+    KeyDown="Window_KeyDown" MouseWheel="Window_MouseWheel" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <StackPanel
+        Name="MainPanel" Orientation="Horizontal" />
+</Window>

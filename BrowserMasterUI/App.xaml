@@ -1,0 +1,13 @@
+﻿<Application x:Class="BrowserMasterUI.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    StartupUri="Window1.xaml">
+    <Application.Resources>
+        <BitmapImage x:Key="Image_Chrome" UriSource="Chrome.png" />
+        <BitmapImage x:Key="Image_Firefox" UriSource="Firefox.png" />
+        <BitmapImage x:Key="Image_IE" UriSource="IE.png" />
+        <BitmapImage x:Key="Image_Opera" UriSource="Opera.png" />
+        <BitmapImage x:Key="Image_Safari" UriSource="Safari.png" />
+        <BitmapImage x:Key="Image_Edge" UriSource="Edge.png" />
+    </Application.Resources>
+</Application>

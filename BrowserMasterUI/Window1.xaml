@@ -1,0 +1,10 @@
+﻿<Window x:Class="BrowserMasterUI.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" 
+    AllowsTransparency="True" WindowStyle="None" Background="Transparent" 
+    ShowInTaskbar="True"
+    KeyDown="Window_KeyDown" MouseWheel="Window_MouseWheel" WindowStartupLocation="CenterScreen">
+    <StackPanel
+        Name="MainPanel" Orientation="Horizontal" />
+</Window>

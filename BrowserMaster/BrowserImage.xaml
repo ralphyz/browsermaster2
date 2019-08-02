@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="BrowserMaster.BrowserImage"
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ani="clr-namespace:System.Windows.Media.Animation;assembly=PresentationFramework">
+    <UserControl.Resources>
+        <Storyboard x:Key="SelectedSB">
+            <DoubleAnimation Name="GrowWidth"
+                Storyboard.TargetName="Icon" Storyboard.TargetProperty="Width" Duration="0:0:0.4" />
+            <DoubleAnimation 
+                Storyboard.TargetName="Icon" Storyboard.TargetProperty="Height" Duration="0:0:0.4" />
+            <DoubleAnimation 
+                Storyboard.TargetName="Icon" Storyboard.TargetProperty="Opacity"
+                To="1" Duration="0:0:0.4" />
+
+        </Storyboard>
+        <Storyboard x:Key="DeSelectedSB">
+            <DoubleAnimation 
+                Storyboard.TargetName="Icon" Storyboard.TargetProperty="Width" Duration="0:0:0.4" />
+            <DoubleAnimation 
+                Storyboard.TargetName="Icon" Storyboard.TargetProperty="Height" Duration="0:0:0.4" />
+            <DoubleAnimation 
+                Storyboard.TargetName="Icon" Storyboard.TargetProperty="Opacity"
+                To=".35" Duration="0:0:0.4" />
+        </Storyboard>
+        <Storyboard x:Key="InitSelectedSB">
+            <DoubleAnimation 
+                Storyboard.TargetName="Icon" Storyboard.TargetProperty="Width"
+                From="1" Duration="0:0:0.4" />
+            <DoubleAnimation 
+                Storyboard.TargetName="Icon" Storyboard.TargetProperty="Height"
+                From="1" Duration="0:0:0.4" />
+            <DoubleAnimation 
+                Storyboard.TargetName="Icon" Storyboard.TargetProperty="Opacity"
+                From="0" To="1" Duration="0:0:0.4" />
+        </Storyboard>
+        <Storyboard x:Key="InitDeSelectedSB">
+            <DoubleAnimation 
+                Storyboard.TargetName="Icon" Storyboard.TargetProperty="Width"
+                From="1" Duration="0:0:0.4" />
+            <DoubleAnimation 
+                Storyboard.TargetName="Icon" Storyboard.TargetProperty="Height"
+                From="1" Duration="0:0:0.4" />
+            <DoubleAnimation 
+                Storyboard.TargetName="Icon" Storyboard.TargetProperty="Opacity"
+                From="0" To=".35" Duration="0:0:0.4" />
+        </Storyboard>
+    </UserControl.Resources>
+    <Border VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Image Name="Icon" MouseLeftButtonUp="Icon_MouseLeftButtonUp"></Image>
+        <Border.BitmapEffect>
+            <BitmapEffectGroup>
+                <DropShadowBitmapEffect 
+                    Color="Black" Direction="-30" ShadowDepth="15" Softness="1" Opacity="0.5"/>
+            </BitmapEffectGroup>
+        </Border.BitmapEffect>
+    </Border>
+</UserControl>
+
